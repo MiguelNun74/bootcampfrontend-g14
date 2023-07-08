@@ -1,0 +1,132 @@
+:root {
+    --bg-1: #a0c49d;
+    --bg-2: #c4d7b2;
+    --bg-3: #e1ecc8;
+    --bg-4: #f7ffe5;
+    --bg-5: #CED8F6;
+  }
+  
+  /* RESET */
+  
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+  
+    display: grid;
+    grid-template-columns: var(--sidebarWidth, 300px) 1fr var(--sidebar2Width, 200px);
+    grid-template-rows: 60px 1fr;
+  
+    grid-template-areas:
+      "side header header"
+      "side main side2";
+  
+    transition: 1000ms;
+  }
+  
+  .header {
+    background-color: var(--bg-1);
+  
+    grid-area: header;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+  }
+  
+  .header__button-menu,
+  .header__button-settings {
+    cursor: pointer;
+  }
+  
+  .header svg {
+    fill: #fff;
+  }
+  
+  .sidebar {
+    background-color: var(--bg-2);
+  
+    grid-area: side;
+  }
+  
+  body:has(.sidebar--open) {
+    --sidebarWidth: 100px;
+  }
+  
+  .sidebar2 {
+    background-color: var(--bg-2);
+  
+    grid-area: side2;
+  
+    font: var(--sidebar2font);
+  }
+  
+  body:has(.sidebar2--open) {
+    --sidebar2Width: 0;
+    --sidebar2font: 0/0 a;
+  }
+  
+  .main {
+    background-color: var(--bg-3);
+  
+    grid-area: main;
+  
+    display: grid;
+  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  
+    grid-template-areas:
+      "c1 c2 c3"
+      "c4 c4 c5"
+      "c4 c4 c6";
+  
+    gap: 20px;
+    padding: 24px;
+  }
+  
+  .card {
+    background-color: var(--bg-4);
+    border-radius: 10px;
+  }
+  
+  .card:nth-child(1) {
+    grid-area: c1;
+  }
+  
+  .card:nth-child(2) {
+    grid-area: c2;
+  }
+  
+  .card:nth-child(3) {
+    grid-area: c3;
+  }
+  
+  .card:nth-child(4) {
+    grid-area: c4;
+  }
+  
+  .card:nth-child(5) {
+    grid-area: c5;
+  }
+  
+  .card:nth-child(6) {
+    grid-area: c6;
+  }
+  
+  @media (max-width: 768px) {
+    .main {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 200px);
+      grid-template-areas: initial;
+    }
+  
+    .card {
+      grid-area: initial !important;
+    }
+  }

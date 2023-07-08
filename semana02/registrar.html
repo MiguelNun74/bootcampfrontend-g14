@@ -1,23 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=meta, initial-scale=1.0">
-    <title>registrar</title>
-    <link rel="<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">"
-    <style> main{
-        display: flex;
-        justify-content:center ;
-        align-items: center;
-        min-height: 100vh;
-
-
-    }</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@next/css/pico.min.css"
+  /> 
+  <style>
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+  </style>
 </head>
 <body>
-    <main class="container"
-    
-    
+  <main class="container">
+    <form>
+      <figure>
+        <img src="https://placehold.co/80.png?text={vv}" />
+      </figure>
+      <hgroup>
+        <h1>Crea una cuenta</h1>
+        <h2>Ingresa la siguiente información para registrarte.</h2>
+      </hgroup>
+
+      <div class="grid">
+        <div>
+          <label>
+            <input name="text" placeholder="Nombres" required />
+          </label>
+        </div>
+        <div>
+          <label>
+            <input name="text" placeholder="Apellidos" required />
+          </label>
+        </div>
+      </div>
+
+      <label>
+        <input name="email" placeholder="Email: Ej. user@gmail.com" required />
+      </label>
+
+      <label>
+        <input type="tel" placeholder="Teléfono" id="telefono" name="telefono" />
+      </label>
+
+      <label>
+        <input type="password" name="password" placeholder="Password" required minlength="6" />
+      </label>
+
+      <label>
+        <input type="password" name="password" placeholder="Confirmar password" required minlength="6" />
+      </label>
+
+      <input type="submit" value="Registrarse" />
+
+      <p>
+        Ya tienes una cuenta? <a href="login.html">Accede desde aquí</a>
+      </p>
+    </form>
+  </main>
 </body>
 </html>

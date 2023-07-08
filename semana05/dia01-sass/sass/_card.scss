@@ -1,0 +1,20 @@
+$card-bg:#fff;
+$card-border-color: #454545;
+$card-border-radius: 4px
+
+.card .success {
+    background-color: green;
+    
+}
+.card--header{
+    padding: 1rem 1.5rem
+    border-botton: 1px solid #454545;
+.card--body{
+    padding: 1rem 1.5rem;
+}
+
+body{
+    background-color: #ffa559;
+    text-align: center;
+    
+}

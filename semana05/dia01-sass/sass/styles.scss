@@ -1,0 +1,20 @@
+@mixin custom-border{
+    border: 5px solid blue
+}
+@mixin custom-border($width,$color,$is-solid: true){
+    @if $is-solid{
+        border:$is-solid{
+            border:$width solid $color;
+            text-align: center;
+        }
+    }
+}
+@import 'variables';
+@import 'mixins';
+@import 'card';
+
+body{
+    background-color: $primary-color;
+    text-align: center;
+
+}

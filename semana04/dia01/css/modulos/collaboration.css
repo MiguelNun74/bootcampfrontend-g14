@@ -1,0 +1,16 @@
+.colaboration {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    padding-top: 8rem;
+    background-color: var(--primary-dark-blue-main);
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (min-width: 768px) {
+    .colaboration {
+      flex-direction: row;
+    }
+  }
