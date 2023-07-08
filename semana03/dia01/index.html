@@ -77,17 +77,20 @@
     </section>
 
     <section class="testimonials">
-      <article class="testimonial testimonial--quote">
-        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-
-        <div class="termimonial_profile">
-          <img src="./images/profile-1.jpg" width="30" height="30" />
-          <hgroup>
-            <h4>Satish Patel</h4>
-            <h5>Founder & CEO, Huddle</h5>
-          </hgroup>
-        </div>
-      </article>
+      <div class="testimonial--wrapperquote">
+        <img class="testimonial__quote" src="./images/bg-quotes.png" />
+        <article class="testimonial">
+          <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+          
+          <div class="termimonial_profile">
+            <img src="./images/profile-1.jpg" width="30" height="30" />
+            <hgroup>
+              <h4>Satish Patel</h4>
+              <h5>Founder & CEO, Huddle</h5>
+            </hgroup>
+          </div>
+        </article>
+      </div>
       <article class="testimonial">
         <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
        
@@ -112,14 +115,55 @@
         </div>
       </article>
     </section>
-    <footer>
-    <section class="piedepagina">
-      <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fylo landing page</title>
-  <link rel="stylesheet" href="./css/index.css">
-</footer>
-      </section>
+
+    <section class="access">
+      <h2>Get early access today</h2>
+
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+
+      <form>
+        <input type="text" placeholder="email@example.com" />
+        <input type="submit" value="Get Started For Free" />
+      </form>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer--wrapper">
+      <img src="./images/logo.svg" />
+      <div class="footer_info">
+        <div class="footer_info__description">
+          <img src="./images/icon-location.svg" />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </div>
+        <div class="footer_info__contact">
+          <span>
+            <img src="./images/icon-phone.svg" />
+            +1-543-123-4567
+          </span>
+          <span>
+            <img src="./images/icon-email.svg" />
+            exam2ple@fylo.com
+          </span>
+        </div>
+        <div class="footer_info__links">
+          About Us
+          Jobs
+          Press
+          Blog
+        </div>
+        <div class="footer_info__links">
+          Contact Us
+          Terms
+          Privacy
+        </div>
+        <div class="footer_info__links">
+          <a href="https://facebook.com" target="_blank"><img src="./images/icons/box-icon-facebook.svg" /></a>
+          <a href="https://twitter.com" target="_blank"><img src="./images/icons/box-icon-twitter.svg" /></a>
+          <a href="https://instagram.com" target="_blank"><img src="./images/icons/box-icon-instagram.svg" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
